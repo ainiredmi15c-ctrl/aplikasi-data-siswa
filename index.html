@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kelola Data Siswa</title>
+    <!-- Memanggil file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Kelola Data Siswa</h2>
+
+    <!-- Kerangka Input Data -->
+    <form id="formSiswa">
+        <div class="form-group">
+            <label for="nis">NIS:</label>
+            <input type="text" id="nis" placeholder="Masukkan Nomor Induk Siswa" required>
+        </div>
+        <div class="form-group">
+            <label for="nama">Nama Siswa:</label>
+            <input type="text" id="nama" placeholder="Masukkan Nama Lengkap" required>
+        </div>
+        <div class="form-group">
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas" placeholder="Contoh: 10A" required>
+        </div>
+        <div class="form-group">
+            <label for="jurusan">Jurusan:</label>
+            <input type="text" id="jurusan" placeholder="Contoh: Rekayasa Perangkat Lunak" required>
+        </div>
+        <button type="submit">Tambah Data</button>
+    </form>
+
+    <!-- Kerangka Pencarian -->
+    <div class="search-container">
+        <input type="text" id="inputPencarian" placeholder="🔍 Cari siswa berdasarkan Nama atau NIS...">
+    </div>
+
+    <!-- Kerangka Tabel -->
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>NIS</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Jurusan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="tabelSiswa">
+            <!-- Data dari JavaScript akan dimasukkan ke sini -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Memanggil file JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
